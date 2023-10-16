@@ -1,11 +1,12 @@
 {
-  "name": "@junggyucheol/ui-test",
-  "version": "0.0.1",
+  "name": "@devggyu/ui-test",
+  "version": "0.0.6",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "module": "./dist/index.es.js",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
   "browser": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
+  "repository": "https://github.com/JUNG-gyucheol/ui-test",
   "private": false,
   "devDependencies": {
     "@babel/preset-env": "^7.23.2",
@@ -15,10 +16,12 @@
     "@rollup/plugin-commonjs": "^25.0.5",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
+    "@rollup/plugin-url": "^8.0.2",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
     "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/addon-themes": "^7.4.6",
     "@storybook/blocks": "^7.4.6",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^7.4.6",
@@ -54,9 +57,10 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "storybook": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "rollup -c"
+    "build": "rm -rf ./dist && rollup -c",
+    "storybook": "storybook dev -p 6006"
   },
   "peerDependencies": {
     "react": "16 || 17 || 18",
@@ -65,6 +69,10 @@
     "styled-components": "^5.3.5"
   },
   "dependencies": {
+    "react-collapsed": "^4.0.4",
     "styled-system": "^5.1.5"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
   }
 }

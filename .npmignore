@@ -1,5 +1,10 @@
 .storybook/
 src/
-rollup.config.js
+rollup.config.mjs
 tsconfig.json
 yarn.lock
+.prettierrc.js
+.babelrc.json
+.eslintrc.js
+.stylelintrc.js
+```
