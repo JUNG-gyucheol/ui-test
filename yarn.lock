@@ -3280,6 +3280,13 @@
     "@types/mime" "*"
     "@types/node" "*"
 
+"@types/styled-system@^5.1.19":
+  version "5.1.19"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.19.tgz#e992086e997008f77bd2b80f730ab609c56e7eaf"
+  integrity sha512-KO570UwUWA6FgD+PWrGj5Lc++J5O1SCj7BWys5SE5sSK14Sy+Wl6K13kPfFOIAZdpwTZR9bGv52FLTHCtsvHbQ==
+  dependencies:
+    csstype "^3.0.2"
+
 "@types/stylis@^4.0.2":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@types/stylis/-/stylis-4.2.1.tgz#867fcb0f81719d9ecef533fdda03e32083b959f6"

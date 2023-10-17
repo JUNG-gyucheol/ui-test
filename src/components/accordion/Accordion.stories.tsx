@@ -3,7 +3,7 @@ import Accordion from './Accordion'
 import React from 'react'
 
 const meta = {
-  //   title: 'Example/Button',
+  title: 'components/Accordion',
   component: Accordion,
 
   //   parameters: {

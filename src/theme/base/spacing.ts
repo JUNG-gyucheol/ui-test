@@ -1,4 +1,4 @@
-const space = [4, 8, 16, 24, 32] as const
+const space = [4, 8, 10, 12, 14, 16, 24, 32] as const
 
 const spaceMap = {
   xs: 4,

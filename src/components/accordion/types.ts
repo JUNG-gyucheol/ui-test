@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { LidoComponentProps } from './AccordionStyles'
+import { LidoComponentProps } from '../../utils/types'
 
 export type AccordionProps = LidoComponentProps<
   'div',
