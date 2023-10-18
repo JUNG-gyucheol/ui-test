@@ -15,8 +15,6 @@ import { StyledSystemProps } from '../../utils'
 
 const Flex = styled.div<StyledSystemProps>`
   display: flex;
-  align-items: center;
-  justify-content: center;
   ${space}
   ${color}
   ${typography}

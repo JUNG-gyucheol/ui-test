@@ -36,7 +36,13 @@ const mediaQueries = {
 }
 
 const breakpointsMap = { xs, sm, md, lg, xl }
-const breakpoints = [sm.maxWidth, md.maxWidth, lg.maxWidth, xl.maxWidth]
+const breakpoints = [
+  xs.maxWidth,
+  sm.maxWidth,
+  md.maxWidth,
+  lg.maxWidth,
+  xl.maxWidth,
+]
 
 export default {
   breakpoints,
