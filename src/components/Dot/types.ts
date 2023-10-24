@@ -6,7 +6,9 @@ export const colorMap = {
   green: 'green',
   red: 'red',
   live: '#ee6a5f',
-  close: '#b2f042',
+  closed: '#b2f042',
+  stopped: '#8c8c8d',
+  seniorclosed: '#625ffb',
   blue: themeLight.blue,
 } as const
 

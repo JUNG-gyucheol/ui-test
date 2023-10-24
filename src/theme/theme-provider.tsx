@@ -1,6 +1,10 @@
 import React from 'react'
 import { FC, PropsWithChildren } from 'react'
-import { ThemeProvider as StyledThemeProvider } from 'styled-components'
+import isPropValid from '@emotion/is-prop-valid'
+import {
+  StyleSheetManager,
+  ThemeProvider as StyledThemeProvider,
+} from 'styled-components'
 import { themeLight } from './light'
 
 export const ThemeProvider: FC<PropsWithChildren<{ theme: any }>> = ({
@@ -9,8 +13,10 @@ export const ThemeProvider: FC<PropsWithChildren<{ theme: any }>> = ({
   ...rest
 }) => {
   return (
-    <StyledThemeProvider theme={theme} {...rest}>
-      {children}
-    </StyledThemeProvider>
+    <StyleSheetManager shouldForwardProp={isPropValid}>
+      <StyledThemeProvider theme={theme} {...rest}>
+        {children}
+      </StyledThemeProvider>
+    </StyleSheetManager>
   )
 }

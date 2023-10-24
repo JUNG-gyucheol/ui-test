@@ -12,6 +12,12 @@ export default {
     { file: pkg.main, format: 'cjs', interop: 'compat' },
     { file: pkg.module, format: 'es', interop: 'compat' },
   ],
-  external: ['react', 'react-collapsed', 'styled-components', 'styled-system'],
+  external: [
+    'react',
+    'react-collapsed',
+    'styled-components',
+    'styled-system',
+    '@emotion/is-prop-valid',
+  ],
   plugins: [url(), typescript(), commonjs(), terser()],
 }
